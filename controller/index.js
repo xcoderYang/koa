@@ -4,7 +4,7 @@ var temp_index = temp({
     url: 'index.js'
 })
 var fn_index = async(ctx, next) => {
-    ctx.response.body = template;
+    ctx.response.body = temp_index;
 };
 
 var temp_signin = temp({
