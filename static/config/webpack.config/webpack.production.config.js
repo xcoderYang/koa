@@ -7,5 +7,8 @@ const path = require('path');
 let baseConfig = require('./webpack.base.config.js');
 
 module.exports = Object.assign({
-  mode: 'development',
+  mode: 'production',
+  devServer:{
+      
+  }
 }, baseConfig);
