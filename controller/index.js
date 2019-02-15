@@ -1,5 +1,5 @@
 const pug = require('pug');
-var temp = pug.compileFile('static/template.pug')
+var temp = pug.compileFile('static/template.pug');
 var temp_index = temp({
     url: 'index.js'
 })
