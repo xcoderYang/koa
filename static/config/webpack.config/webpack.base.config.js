@@ -44,8 +44,6 @@ module.exports = {
   output: {
     filename: "[name]",
     path: path.resolve("dist"),
-    hotUpdateChunkFilename: 'hot/hot-update.js',
-    hotUpdateMainFilename: 'hot/hot-update.json'
   },
   module: {
     rules: [
@@ -77,10 +75,5 @@ module.exports = {
     alias: {
       vue: "vue/dist/vue.js"
     }
-  },
-  devServer: {
-    host: 'localhost',
-    hot: true,
-    open: true
   }
 };

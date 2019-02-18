@@ -1,14 +1,23 @@
 
 'use strict';
-
-const env = process.argv[1];
 const path = require('path');
-
 let baseConfig = require('./webpack.base.config.js');
-
-module.exports = Object.assign({
+let obj = Object.assign(baseConfig,{
   mode: 'production',
-  devServer:{
-      
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.common.js'
+    }
   }
-}, baseConfig);
+});
+console.log('------------------------------');
+console.log(obj);
+console.log('------------------------------');
+module.exports = Object.assign(baseConfig, {
+  mode: 'production',
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.common.js'
+    }
+  }
+});
