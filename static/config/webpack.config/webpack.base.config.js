@@ -53,10 +53,14 @@ module.exports = {
       },
       {
         test: /\.styl(us)?$/,
-        use: ["vue-style-loader", "css-loader", "stylus-loader"]
+        use: ["vue-style-loader","style-loader", "css-loader", "stylus-loader"]
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf|png|jpg|gif)$/,
         use: [
           'file-loader'
         ]
