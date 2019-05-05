@@ -1,5 +1,7 @@
 <template>
-    <div class="box">
+    <div id="content">
+      <header-wrapper></header-wrapper>
+      <div class="box">
         {{msg}}
         <span>
             {{msg1}}
@@ -8,16 +10,22 @@
             {{msg2}}
         </span>
     </div>
+    </div>
 </template>
 <script>
-
+import header from '../../components/header/main.vue';
+import '../../style/noscope-global.styl';
+import axios from 'axios'
 export default {
     data: function(){
         return {
-            msg: 'nihao, World!',
+            msg: 'nihasssssssaso, World!',
             msg1: 'Are you here?',
             msg2: "yes, I'm here"
         }
+    },
+    components:{
+      'header-wrapper': header
     }
 }
 </script>

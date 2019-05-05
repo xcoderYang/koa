@@ -2,12 +2,11 @@
  * @Author: yxcoder 
  * @Date: 2018-12-26 09:29:40 
  * @Last Modified by: yxcoder
- * @Last Modified time: 2019-03-29 17:11:15
+ * @Last Modified time: 2019-01-22 14:54:51
  */
   <template>
     <div id="content">
-      <cmpnt-header :isLogin="false"></cmpnt-header>
-      <cmpnt-login></cmpnt-login>
+      <header-wrapper :isLogin="false"></header-wrapper>
       <div>
         {{msg}}
         <span>
@@ -19,19 +18,17 @@
   </template>
   <script>
     import header from './components/header/main.vue';
-    import login from './components/login/main.vue';
     //import './font/Lato/d'
     import './style/noscope-global.styl';
     export default {
       data(){
         return{
-          msg: 'Hello, World!',
+          msg: 'Helsdlsso, World!',
           msg2: '123'
         }
       },
       components:{
-        'cmpnt-header': header,
-        'cmpnt-login': login
+        'header-wrapper': header
       }
     }
   </script>
