@@ -2,7 +2,7 @@
  * @Author: yxcoder 
  * @Date: 2018-12-26 09:29:40 
  * @Last Modified by: yxcoder
- * @Last Modified time: 2019-01-22 14:54:51
+ * @Last Modified time: 2019-05-06 14:15:22
  */
   <template>
     <div id="content">
@@ -20,6 +20,7 @@
     import header from './components/header/main.vue';
     //import './font/Lato/d'
     import './style/noscope-global.styl';
+    import eleUI from 'element-ui'
     export default {
       data(){
         return{
