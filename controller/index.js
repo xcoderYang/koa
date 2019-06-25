@@ -12,12 +12,13 @@ var temp_signin = temp({
 });
 
 var fn_signin = async(ctx, next) => {
+    console.log(ctx.request.body);
     var
-        name = ctx.request.body.name || '',
+        account = ctx.request.body.account || '',
         password = ctx.request.body.password || '';
-    console.log(`signin with name: ${name}, password: ${password}`);
-    if(name === 'koa' && password === '12345'){
-        ctx.response.body = `<h1>Welcome, ${name}!</h1>`;
+    console.log(`signin with name: ${account}, password: ${password}`);
+    if(account === 'koa' && password === '12345'){
+        ctx.response.body = `<h1>Welcome, ${account}!</h1><div><img src="static/img/01.jpg" /></div>`;
     }else{
         ctx.response.body = `<h1>Login failed!</h1>
         <p><a href="/">Try again</a></p>`;

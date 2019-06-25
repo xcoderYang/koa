@@ -2,7 +2,7 @@
     <div id="content">
       <header-wrapper></header-wrapper>
       <div class="box">
-        {{msg}}
+        {{msg}}asfsdf
         <span @click="jumpTo">
             {{msg1}}
         </span>
