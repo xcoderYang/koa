@@ -2,12 +2,10 @@
  * @Author: yxcoder 
  * @Date: 2018-12-26 09:29:40 
  * @Last Modified by: yxcoder
- * @Last Modified time: 2019-11-15 16:59:01
+ * @Last Modified time: 2019-11-19 09:53:21
  */
   <template>
     <div id="content">
-      <el-row>
-        <el-col :span="12">
           <div class="grid-content bg-purple">
             <pre>
 这是 C++代码:
@@ -163,8 +161,6 @@ namespace fifo {
 };
             </pre>
           </div>
-        </el-col>
-        <el-col :span="12">
           <div class="grid-content bg-purple-light">
             <pre>
 这是 Java代码：
@@ -299,8 +295,6 @@ public class Switch extends cSimpleModule {
 }
             </pre>
           </div>
-        </el-col>
-      </el-row>
     </div>
   </template>
   <script>
@@ -325,5 +319,10 @@ public class Switch extends cSimpleModule {
     pre
       font-size 18px
       font-weight bold
+    .grid-content
+      float left
+      width 50%
+      &:nth-child(2)
+        padding-left 200px
   </style>
   
